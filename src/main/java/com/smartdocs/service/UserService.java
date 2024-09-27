@@ -3,8 +3,6 @@ package com.smartdocs.service;
 import com.smartdocs.model.User;
 import com.smartdocs.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.ApplicationRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,8 +12,6 @@ import java.util.List;
 public class UserService {
 
     private final UserRepository userRepository;
-
-
 
     public User saveUser(User user){
         return userRepository.save(user);
