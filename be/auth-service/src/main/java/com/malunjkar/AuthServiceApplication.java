@@ -23,3 +23,4 @@ class WelcomeController {
 		return "<h1 style='color: blue; font-family: Arial, sans-serif; text-align: center;'>Welcome to Auth Service...!</h1>";
 	}
 }
+

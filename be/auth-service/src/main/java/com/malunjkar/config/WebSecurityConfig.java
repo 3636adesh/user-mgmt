@@ -26,7 +26,7 @@ public class WebSecurityConfig {
         return http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorizeRequests -> authorizeRequests.anyRequest().permitAll())
-                .authenticationProvider()
+           //     .authenticationProvider()
                 .build();
     }
 

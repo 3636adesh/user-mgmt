@@ -2,9 +2,8 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: postgres
+    password: 3636@Adesh
     driver-class-name: org.postgresql.Driver
-
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,3 +13,19 @@ spring:
         format_sql: true
         show_sql: true
         use_sql_comments: true
+
+
+
+jwt:
+  privateKey: |
+    -----BEGIN PRIVATE KEY-----
+    MIIEvQIBADANBgkqhkiG9w0BAQEFAASCAmMwggJfAgEAAoGBALyq7
+    MIIEpAIBAAKCAQEA7Ocj0UvD/Pi0OtYOpN9gczkMfUGuZVs3TkA4N8ebYr6zZyOmtw+Vspv5b3puhwWhbGBpSzcWn7FzrsEdx/OBhSZm0Wl5Hb4oROQd6ZnoBtybRAHt0IhZDAFA9W4oNNckvDeNe8ZpPR9U/RwvLBhYFvmFvul9r9VhZQOn9G0nWcZ7a7rJeJInHTJdNYdV5I+xA8phXfV2vFb1TjJbsVz8RV7LlgTeAUs+ct3XJmDPJ3pPjZSR4LUnyFc+G6OdK5D4PzDJwIdV2EdKOrfgv3VQm6mGd08iGkXyO3AcD8ftP3mHKdQyX7TfHLdDBnS4rgDpAcK7hLxllgCvsDLTXZGVb0Lnd5w7NwEomMdzlpsDOu6HmqL87xY0g09CTUO1pniFHQFNGi1qwoRGg==
+    -----END PRIVATE KEY-----
+  publicKey: |
+    -----BEGIN PUBLIC KEY-----
+    MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArj1KDfPgM
+    MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7Ocj0UvD/Pi0OtYOpN9gczkMfUGuZVs3TkA4N8ebYr6zZyOmtw+Vspv5b3puhwWhbGBpSzcWn7FzrsEdx/OBhSZm0Wl5Hb4oROQd6ZnoBtybRAHt0IhZDAFA9W4oNNckvDeNe8ZpPR9U/RwvLBhYFvmFvul9r9VhZQOn9G0nWcZ7a7rJeJInHTJdNYdV5I+xA8phXfV2vFb1TjJbsVz8RV7LlgTeAUs+ct3XJmDPJ3pPjZSR4LUnyFc+G6OdK5D4PzDJwIdV2EdKOrfgv3VQm6mGd08iGkXyO3AcD8ftP3mHKdQyX7TfHLdDBnS4rgDpAcK7hLxllgCvsDLTXZGVb0Lnd5w7NwEomMdzlpsDOu6HmqL87xY0g09CTUO1pniFHQFNGi1qwoRGg==
+    -----END PUBLIC KEY-----
+  secretKey: hello
+  expirationTime: 36000
